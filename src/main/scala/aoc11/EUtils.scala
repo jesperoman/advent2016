@@ -2,9 +2,6 @@ package aoc11
 
 import aoc11.Device.{Generator, MicroChip}
 
-/**
-  * Created by jesper on 2016-12-29.
-  */
 object EUtils {
   def workingDevices(devices: List[Device]): Boolean = {
     val generators = devices.collect{case g: Generator => g}

@@ -2,9 +2,6 @@ package aoc11
 
 import aoc11.Device.{Generator, MicroChip}
 
-/**
-  * Created by jesper on 2016-12-29.
-  */
 case class State(moves: Int, floors: List[Floor], elevator: Int, prevStates: List[State]) {
   def currentFloor: Floor = floors(elevator)
   def otherFloors: List[Floor] = floors.filterNot(_ == currentFloor)

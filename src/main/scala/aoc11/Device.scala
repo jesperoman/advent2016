@@ -1,8 +1,5 @@
 package aoc11
 
-/**
-  * Created by jesper on 2016-12-29.
-  */
 sealed trait Device {
   val subject: String
 }
